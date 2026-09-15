@@ -1,0 +1,99 @@
+{
+  "specVersion": "1.0",
+  "form": {
+    "formId": "US-1040",
+    "revision": "2025",
+    "pageSize": {
+      "width": 612,
+      "height": 792,
+      "unit": "pt"
+    },
+    "coordinateSystem": "PDF_POINTS_ORIGIN_BOTTOM_LEFT"
+  },
+  "annotations": [
+    {
+      "id": "taxpayer.firstName",
+      "page": 1,
+      "type": "TEXT",
+      "source": {
+        "path": "$.taxpayer.firstName"
+      },
+      "position": {
+        "x": 72,
+        "y": 706,
+        "width": 180,
+        "height": 18
+      },
+      "format": {
+        "fontFamily": "Helvetica",
+        "fontSize": 10,
+        "alignment": "LEFT",
+        "color": "#000000",
+        "maxLength": 30,
+        "overflow": "SHRINK"
+      }
+    },
+   {
+      "id": "income.wages",
+      "page": 1,
+      "type": "CURRENCY",
+      "source": {
+        "path": "$.income.wages"
+      },
+      "position": {
+        "x": 450,
+        "y": 600,
+        "width": 90,
+        "height": 18
+      },
+      "format": {
+        "fontFamily": "Helvetica",
+        "fontSize": 9,
+        "alignment": "RIGHT",
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "thousandsSeparator": true
+      }
+    },
+    {
+      "id": "taxpayer.ssn",
+      "page": 1,
+      "type": "TEXT",
+      "source": {
+        "path": "$.taxpayer.ssn"
+      },
+      "position": {
+        "x": 430,
+        "y": 706,
+        "width": 110,
+        "height": 18
+      },
+      "format": {
+        "fontFamily": "Helvetica",
+        "fontSize": 9,
+        "alignment": "CENTER",
+        "mask": "XXX-XX-XXXX"
+      }
+    },
+    {
+      "id": "filingStatus.single",
+      "page": 1,
+      "type": "CHECKBOX",
+      "source": {
+        "path": "$.filingStatus",
+        "equals": "SINGLE"
+      },
+      "position": {
+        "x": 74,
+        "y": 655,
+        "width": 10,
+        "height": 10
+      },
+      "format": {
+        "checkedMark": "X",
+        "fontSize": 9,
+        "alignment": "CENTER"
+      }
+    }
+  ]
+}
